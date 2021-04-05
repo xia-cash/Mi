@@ -18,21 +18,11 @@ export default {
     }
   },
   mounted () {
-    //本地加载请求静态文件
-    this.axios.get('/mock/user/login.json').then((res) => {
-      this.res = res;
-    })
+    
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import './assets/scss/reset.scss';
 </style>
